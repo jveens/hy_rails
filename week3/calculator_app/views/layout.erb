@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hello from a view!</title>
+	<style>
+	.important-true {
+		color: red;
+	}
+	.done-true {
+		text-decoration: line-through;
+	}
+	</style>
+</head>
+	<body>
+		<h1>Hello! I'm a super smart Calculator!</h1>
+		<form action="/add" method="GET">
+			<p>First, which operation should we perform?</p>
+			<select name='operation'>
+			  <option value='add'>Add</option>
+			  <option value='sub'>Subtract</option>
+			  <option value='divy'>Divide</option>
+			  <option value='multi'>Multiply</option>
+			</select>
+			<input type="text" name="a" placeholder="Number 1" />
+			<input type="text" name="b" placeholder="Number 2" />
+			<input type="submit" value="OPERATE!"/>
+		</form>
+
+		<h4>The result is: <%= SUM %></h4>
+	</body>
+</html>

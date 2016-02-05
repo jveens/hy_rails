@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 # set up our route, pass it the controller name#action
   get '/' => 'hello#view'
   get '/hello' => 'hello#again'
-  get '/signup' => 'signup#confirm'
+  get '/signup' => 'signup#create'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
